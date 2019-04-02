@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+}
+.mainMenu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 15px;
+}
+.email {
+  padding-right: 15px;
+}
+.images {
+  padding-right: 15px;
+}
+.email a:hover, .images a:hover {
+  text-decoration: underline;
+}
+.menuPopUp{
+  padding-right: 15px;
+}
+.popUp {
+  display: block;
+  border: 1 solid #ccc;
+  width: 320px;
+  height: auto;
+  box-sizing: border-box;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.popup-checkbox {
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+.popup-label {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url(label.png);
+  background-size: 528px 68px;
+  background-position: -132px -38px;
+  opacity: .55;
+  cursor: pointer;
+}
+.popup-label:hover {
+  opacity: 1;
+}
+.popup-checkbox:checked ~ .popUp {
+  display: block;
+}
+.popUp {
+  display: none;
+  width: 300px;
+  height: 408px;
+  overflow: auto;
+}
+.el {
+
+}
+.part {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.el a {
+  display: block;
+  width: 80px;
+  height: 84px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.el a:hover {
+  border: 1px solid #e6e6e6;
+}
+.icon {
+  display: flex;
+  align-content: center;
+  width: 64px;
+  height: 54px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cdd;
+}
+#popup-checkboxMore{
+  display: none;
+}
+.checkbox-more {
+  display: block;
+  width: 100%;
+  background: #f5f5f5;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+.more {
+  display: none;
+  flex-wrap: wrap;
+  padding: 18px;
+}
+.popup-checkboxMore:checked ~ .more {
+  display: flex;
+}
+.popup-checkboxMore:checked ~ .hr {
+  display: block;
+}
+.popup-checkboxMore:checked ~ .checkbox-more {
+  display: none;
+}
+.hr {
+  display: none;
+  margin: 15px 0 15px 0;
+  border: solid 1px #f5f5f5;
+  opacity: 1;
+}
+.myAccount {
+  padding-right: 15px;
+}
+.mainAccount {
+  display: block;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: green;
+
+}
