@@ -55,7 +55,7 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-  
+
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -82,6 +82,7 @@ text-decoration: line-through;
  padding: 8px 16px 8px 16px;
  margin-top: -5px;
  margin-right: -5px;
+ z-index: 5;
 }
 .close:hover {
   background-color: #f44336;

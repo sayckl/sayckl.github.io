@@ -3,14 +3,14 @@ new Vue({
   data: {
     inputText: '',
     items: [
-      { text: "go to the gym" }
+      { text: "go to the gym", checked: false }
     ],
 
   },
   methods:  {
 addToDo: function() {
     if(this.inputText !== '') {
-      this.items.push({text:this.inputText});
+      this.items.push({text:this.inputText, checked: false });
       this.inputText = '';
 
     }
@@ -18,9 +18,8 @@ addToDo: function() {
   deleteItem: function(index) {
   this.items.splice(index, 1);
 },
-/* check: function(index) {
-var  item = this.items[index];
+check: function(item) {
   item.checked = !item.checked;
-}, */
+},
 },
 })

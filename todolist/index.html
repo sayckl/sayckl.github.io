@@ -21,7 +21,12 @@
       </div>
 
       <ul id="list">
-        <li v-for="(item, index) in items">
+        <li
+        v-for="(item, index) in items"
+        :key="index"
+        :class="{checked: item.checked}"
+        @click="check(item)"
+        >
           {{item.text}}
           <button type="button" @click="deleteItem(index)" class="close">x</button>
         </li>
