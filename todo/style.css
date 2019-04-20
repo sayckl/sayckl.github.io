@@ -1,0 +1,148 @@
+body {
+  margin: 5px;
+}
+section {
+  height: 40px;
+  margin: 20px 5px 0;
+}
+.menu-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.5s;
+}
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+.menu-btn_active span {
+  height: 0;
+}
+.menu-btn_active span:before {
+  transform: rotate(45deg);
+}
+.menu-btn_active span:after {
+  transform: rotate(-45deg);
+}
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  padding-bottom: 15px;
+  background-color: #7b1fa2;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 0 0 7px 7px;
+}
+#input{
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 71%;
+  padding: 10px;
+  font-size: 16px;
+}
+.addbtn{
+  font-size: 16px;
+  padding: 10px;
+  width: 20%;
+  margin: 0;
+}
+button:hover {
+  background-color: #bbb;
+}
+aside {
+  position: absolute;
+  z-index: 5;
+  background-color: skyblue;
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  width: 12%;
+  border: 1px solid black;
+  border-radius: 0 0 7px 7px;
+  padding-bottom: 10px;
+
+}
+.show_aside {
+  display: flex;
+
+}
+button {
+  border: none;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  width: 50%;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:hover{
+ background: #ddd;
+}
+ul li.checked {
+background-color: #33cc33;
+color: #fff;
+text-decoration: line-through;
+}
+.close {
+ float: right;
+ margin-left: 5px;
+ border: none;
+ background-color: inherit;
+ padding: 8px 16px 8px 16px;
+ margin-top: -5px;
+ margin-right: -5px;
+ z-index: 5;
+}
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
