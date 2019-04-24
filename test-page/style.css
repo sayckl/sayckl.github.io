@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: url(imgs/img.jpg) no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    margin: 50px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  color: #4a5d8b;
+}
+.otherbtn {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration-line: none;
+}
+section {
+  margin-top: 20%;
+}
+.comunic {
+  width: 25%;
+}
+.comunic h2, .comunic p, .comunic a{
+  color: #4a5d8b;
+}
+.comunic a {
+  display: block;
+  width: 90px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+
+}
