@@ -1,4 +1,4 @@
-export default addcomment
+
 new Vue({
   el: '#writecom',
   data: {
