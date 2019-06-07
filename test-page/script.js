@@ -4,7 +4,7 @@ new Vue({
   data: {
     titlevalue: '',
     bodyvalue: '',
-
+    comments: [],
   },
   methods: {
     addcomment: function() {

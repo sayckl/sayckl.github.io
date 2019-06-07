@@ -166,6 +166,17 @@ footer .policy {
   color: #1d1e25;
   font-size: 12px;
 }
+.comments-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.comments-list div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
 @media screen and (max-width: 1200px) {
   .aboutus, .pageTitle {
     margin-left: 100px;
