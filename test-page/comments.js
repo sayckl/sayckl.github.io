@@ -1,4 +1,4 @@
-import addcomment from 'script.js';
+
 new Vue({
   el: '#comments-list',
   data: {
