@@ -1,40 +1,216 @@
 body {
   margin: 0;
-  background: url(imgs/img.jpg) no-repeat;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    margin: 50px;
 }
 header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.aboutus, .pageTitle {
+  margin: 0 180px;
+}
+header {
+  margin-top: 49px;
   display: flex;
   justify-content: space-between;
-  font-size: 25px;
-  color: #4a5d8b;
 }
-.otherbtn {
-  width: 50%;
+.menu {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
-a {
-  text-decoration-line: none;
+.menu a {
+  text-decoration: none;
+  margin-left: 38px;
+  color: #000;
+  font-size: 11px;
 }
-section {
-  margin-top: 20%;
-}
-.comunic {
-  width: 25%;
-}
-.comunic h2, .comunic p, .comunic a{
-  color: #4a5d8b;
-}
-.comunic a {
+.menu span {
   display: block;
-  width: 90px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 15px;
-
+  height: 2px;
+  width: 63px;
+  background-color: #f9d10d;
+}
+.pageTitle {
+  font-size: 49px;
+}
+.imgblock img{
+  width: 100%;
+}
+.aboutus {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 114px;
+  margin-bottom: 85px;
+}
+.aboutus div {
+  width: 30%;
+}
+.aboutus h2 {
+  font-size: 25px;
+}
+.aboutus ul {
+  padding: 20px;
+}
+ul li {
+  font-size: 12px;
+}
+.writecom {
+  padding: 142px 180px 0;
+  background-color: #1d1e25;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  padding-bottom: 145px;
+}
+.titletext {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.writecom-title hr {
+  height: 5px;
+  width: 70px;
+  background-color: #f9d10d;
+  border: 0;
+  align: left;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+input {
+  font-size: 12px;
+  border: solid 1px #60e3a1;
+  border-radius: 3px;
+  background-color: #1d1e25;
+  color: #45946f;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+#comment {
+  height: 100px;
+  font-size: 12px;
+  border: solid 1px #60e3a1;
+  border-radius: 3px;
+  background-color: #1d1e25;
+  color: #45946f;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+#send {
+  width: 27%;
+  font-size: 12px;
+  border-radius: 3px;
+  background-color: #60e3a1;
+  color: #1d1e25;
+  border: none;
+  padding: 24px 20px;
+  text-align: center;
+}
+#send:hover {
+  cursor: pointer;
+  background-color: #66cc99;
+}
+footer {
+  padding: 0 50px 0;
+  background-color: #1d1e25;
+}
+footer hr{
+  margin: 0;
+  height: 1px;
+  background-color: #2b2c36;
+  border: none;
+}
+footer .contact {
+  color: #f7f7f7;
+}
+footer .policy {
+  color: #4a4d5e;
+}
+.footertext {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  font-size: 12px;
+}
+.list {
+  margin: 0 180px;
+  margin-bottom: 200px;
+}
+.list h2 {
+  font-size: 50px;
+}
+.list h3 {
+  font-size: 17px;
+  text-align: center;
+  color: #888a8b;
+}
+.list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #60e3a1;
+  border-radius: 3px;
+  text-decoration: none;
+  height: 53px;
+  width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+}
+.list img {
+  margin-right: 10px;
+  margin-top:
+}
+.txt {
+  color: #1d1e25;
+  font-size: 12px;
+}
+@media screen and (max-width: 1200px) {
+  .aboutus, .pageTitle {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .aboutus {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .writecom {
+    padding: 7%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .aboutus, .pageTitle {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .pageTitle {
+    font-size: 175%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  .aboutus, .pageTitle {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutus div {
+    width: 100%;
+  }
+  .writecom {
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+  }
+  .writecom .input {
+    width: 100%;
+  }
 }

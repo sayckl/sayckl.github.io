@@ -1,35 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css"></link>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,500" rel="stylesheet" type="text/css"></link>
-    <title>test-page</title>
+    <link rel="stylesheet" media="screen and (max-width=1200px)" href="style/style.css">
+    <link rel="stylesheet" media="screen and (max-width=750px)" href="style/style.css">
+    <link rel="stylesheet" media="screen and (max-width=500px)" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lorem Ipsum</title>
   </head>
   <body>
     <header>
-      <div class="homebtn">
-        <a href="index.html">Home</a>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png"></a>
       </div>
-      <div class="otherbtn">
-        <a href="#">Blog</a>
-        <a href="#">About us</a>
-        <a href="#">Team</a>
-        <a href="#">Contact us</a>
+      <div class="menu">
+        <a href="#aboutus">ABOUT US</a>
+        <a href="#writecom">WRITE COMMENT</a>
+        <a href="comments.html">COMMENTS</a>
       </div>
     </header>
     <section>
-      <div class="comunic">
-        <h2>Communication</h2>
-        <p>Lorem ipsum dolor sit amet, conse cetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-        <a href="#">Learn More</a>
+      <div class="pageTitle">
+        <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h1>
+      </div>
+      <div class="imgblock">
+        <img src="img/Layer 131.png">
+      </div>
+    </section>
+    <section id="aboutus" class="aboutus">
+      <div class="weare">
+        <img src="img/whoweare.png">
+        <h2>Who we are</h2>
+        <ul>
+          <li>It is a long established fact that a reader will be distracted</li>
+          <li>The readable content of a page when looking at its layout</li>
+          <li>The point of using Lorem Ipsum</li>
+          <li>As opposed to using 'Content here, content here'.</li>
+        </ul>
+      </div>
+      <div class="wedo">
+        <img src="img/whatwedo.png">
+        <h2>What we do</h2>
+        <ul>
+          <li>Many desktop publishing packages and web page</li>
+          <li>There are many variations of passages Of Lorem Ipsum avaliable, but the majority have</li>
+          <li>Varios versions have evolved over the years, sometimes by accident</li>
+        </ul>
+      </div>
+      <div class="technology">
+        <img src="img/technology.png">
+        <h2>Technology</h2>
+        <ul>
+          <li>The point of using Lorem Ipsum</li>
+          <li>As opposed to using 'Content here, content here'.</li>
+          <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+          <li>A Latin professor at Hampden-Sydney College in Virginia</li>
+        </ul>
+      </div>
+    </section>
+    <section class="writecom" id="writecom">
+      <div class="writecom-title">
+        <div class="titletext">
+          Write <br>comment
+        </div>
+        <hr align="left">
+      </div>
+      <div class="input">
+        <input
+        type="text"
+        id="title"
+        placeholder="Title"
+        v-model="titlevalue"
+        >
+        <textarea
+        type="text"
+        id="comment"
+        placeholder="Your comment"
+        v-model="bodyvalue"
+        ></textarea>
+        <button
+        type="button"
+        id="send"
+        @click="addcomment"
+        >Send</button>
       </div>
     </section>
     <footer>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
+      <hr>
+      <div class="footertext">
+        <div class="contact">
+          <p>mail@mailtest.com</p>
+          <p>+30-6977664062</p>
+        </div>
+        <div class="policy">
+          <p>Copyright © 2019 Test All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

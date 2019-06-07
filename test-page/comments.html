@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width=1200px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width=750px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width=500px)" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lorem Ipsum</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png"></a>
+      </div>
+      <div class="menu">
+        <a href="#aboutus">ABOUT US</a>
+        <a href="#writecom">WRITE COMMENT</a>
+        <a href="comments.html"><span></span>COMMENTS</a>
+      </div>
+    </header>
+    <section class="list">
+      <h2>Comments</h2>
+      <div class="comments-list" id="comments-list">
+        <div
+        v-for="comment of comments"
+        :key="id"
+        :class="comment"
+        >
+        {{comment.title}}
+        {{comment.body}}
+        </div>
+      </div>
+      <h3>Lorem Ipsum is text of the typesetting industry</h3>
+      <a href="index.html"><img src="img/vector.png"><span class="txt">Back to homepage</span></a>
+    </section>
+    <footer>
+      <hr>
+      <div class="footertext">
+        <div class="contact">
+          <p>mail@mailtest.com</p>
+          <p>+30-6977664062</p>
+        </div>
+        <div class="policy">
+          <p>Copyright © 2019 Test All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="comments.js"></script>
+  </body>
+</html>
