@@ -5,7 +5,7 @@ header {
   margin-left: 50px;
   margin-right: 50px;
 }
-.aboutus, .pageTitle {
+.aboutus, .pagetitle {
   margin: 0 180px;
 }
 header {
@@ -29,7 +29,7 @@ header {
   width: 63px;
   background-color: #f9d10d;
 }
-.pageTitle {
+.pagetitle {
   font-size: 49px;
 }
 .imgblock img{
@@ -121,7 +121,8 @@ footer hr{
   background-color: #2b2c36;
   border: none;
 }
-footer .contact {
+.contact a {
+  text-decoration: none;
   color: #f7f7f7;
 }
 footer .policy {

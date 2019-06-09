@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (max-width=1200px)" href="style/style.css">
-    <link rel="stylesheet" media="screen and (max-width=750px)" href="style/style.css">
-    <link rel="stylesheet" media="screen and (max-width=500px)" href="style/style.css">
     <link rel="stylesheet" href="style.css">
     <title>Lorem Ipsum</title>
   </head>
@@ -21,7 +18,7 @@
       </div>
     </header>
     <section>
-      <div class="pageTitle">
+      <div class="pagetitle">
         <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h1>
       </div>
       <div class="imgblock">
@@ -66,32 +63,32 @@
         </div>
         <hr align="left">
       </div>
-      <div class="input">
-        <input
-        type="text"
-        id="title"
-        placeholder="Title"
-        v-model="titlevalue"
-        >
-        <textarea
-        type="text"
-        id="comment"
-        placeholder="Your comment"
-        v-model="bodyvalue"
-        ></textarea>
-        <button
-        type="button"
-        id="send"
-        @click="addcomment"
-        >Send</button>
-      </div>
+      <form class="input">
+          <input
+          type="text"
+          id="title"
+          placeholder="Title"
+          v-model="titlevalue"
+          >
+          <textarea
+          type="text"
+          id="comment"
+          placeholder="Your comment"
+          v-model="bodyvalue"
+          ></textarea>
+          <button
+          type="submit"
+          id="send"
+          @click="addcomment"
+          >Send</button>
+      </form>
     </section>
     <footer>
       <hr>
       <div class="footertext">
         <div class="contact">
-          <p>mail@mailtest.com</p>
-          <p>+30-6977664062</p>
+          <p><a href="mail@mailtest.com">mail@mailtest.com</a></p>
+          <p><a href="+30-6977664062">+30-6977664062</a></p>
         </div>
         <div class="policy">
           <p>Copyright © 2019 Test All Rights Reserved.</p>

@@ -9,7 +9,6 @@ new Vue({
   mounted() {
     fetch('https://5cbef81d06a6810014c66193.mockapi.io/api/comments/')
     .then(response => response.json())
-    .then(data => this.comments = data);
+    .then(data => this.comments = data)
   },
-
 })
